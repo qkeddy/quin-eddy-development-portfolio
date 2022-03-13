@@ -17,11 +17,13 @@ nav {
 .person {
   color: whitesmoke;
   flex: 1 0 auto;
-  font-size: 36px;
+  font-size: 45px;
+  font-weight: bold;
   background-color: darkslategrey;
   padding: 10px 20px;
 }
 
+/* TODO: Question: Is this the correct approach? */  
 .empty-space {
   flex: 1 0 auto;
   font-size: 0px;
@@ -37,7 +39,7 @@ nav {
 
 .nav-container a {
   color: white;
-  flex: 1 0 90px;
+  flex: 1 0 80px;
   padding: 14px 0px;
   text-align: center;
   text-decoration: none;
@@ -52,6 +54,17 @@ nav {
   background-position: center;
 }
 
+#subtitle {
+  position: relative;
+  text-align: end;
+  top: 200px;
+  right: 100px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 45px;
+  color: darkslategrey
+}
+
 @media screen and (max-width: 768px) {
   nav {
     height: 290px;
@@ -63,8 +76,7 @@ nav {
     text-align: center;
   }
 
-  /* TODO: Question: Is this the correct approach? 
-     TODO: Also, why do we still see the space in Chrome? */
+  /* TODO: Also, why do we still see the space for this in Chrome? */
   .empty-space {
     font-size: 0px;
     height: 0%;
@@ -78,6 +90,14 @@ nav {
   .nav-container a {
     color: white;
     flex: 1 0 auto;
+  }
+
+  /* TODO: Is there a better way to center? I thought I saw a shortcut for this. */
+  #subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    right: auto;
   }
 
 
