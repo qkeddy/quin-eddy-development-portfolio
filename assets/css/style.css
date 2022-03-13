@@ -11,56 +11,37 @@ nav {
   display: flex;
   background-color: gray;
   height: 75px;
-  align-items:center;
+  align-items: center;
 }
 
 .person {
   color: whitesmoke;
-  flex: 1 0 100px;
+  flex: 1 0 auto;
   font-size: 36px;
   background-color: darkslategrey;
-  padding: 5px 10px;
+  padding: 10px 20px;
 }
 
-.emptyspace {
-  flex: 1 0 100px;
+.empty-space {
+  flex: 1 0 auto;
+  font-size: 0px;
 }
-
 
 .nav-container {
-  flex: 1 0 100px;
+  flex: 1 0 auto;
   display: flex;
   align-items: center;
   align-content: flex-end;
+  flex-direction: row;
 }
 
 .nav-container a {
   color: white;
-  flex: 1 0 auto;
+  flex: 1 0 90px;
+  padding: 14px 0px;
   text-align: center;
   text-decoration: none;
-  
-
 }
-
-
-  /* padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 0px;
-  text-decoration: none;
-  text-align: center; */
-
-/* flex: 1 0 300px;
-  width: 400px;
-  flex-direction: row;
-  display: inline;
-  font-size: 24px;
-  list-style-type: none;
-  padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px; */
 
 .hero {
   height: 300px;
@@ -70,3 +51,52 @@ nav {
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 290px;
+    flex-direction: column;
+  }
+
+  .person {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* TODO: Question: Is this the correct approach? 
+     TODO: Also, why do we still see the space in Chrome? */
+  .empty-space {
+    font-size: 0px;
+    height: 0%;
+    flex-basis: 0%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-container a {
+    color: white;
+    flex: 1 0 auto;
+  }
+
+
+
+
+  /* padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 0px;
+  text-decoration: none;
+  text-align: center; */
+
+  /* flex: 1 0 300px;
+  width: 400px;
+  flex-direction: row;
+  display: inline;
+  font-size: 24px;
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px; */
