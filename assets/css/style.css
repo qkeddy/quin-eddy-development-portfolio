@@ -14,13 +14,15 @@ nav {
   display: flex;
   background-color: gray;
   height: 75px;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 main {
   display: flex;
-  height: 75px;
+  /* height: 75px; */
   align-items: center;
+  flex-direction: column;
 }
 
 aside {
@@ -41,7 +43,7 @@ section {
 /* ID Selectors */
 #person {
   color: whitesmoke;
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
   font-size: 45px;
   font-weight: bold;
   background-color: darkslategrey;
@@ -55,18 +57,22 @@ section {
 }
 
 #nav-container {
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
   display: flex;
+ 
   align-items: center;
-  align-content: flex-end;
-  flex-direction: row;
+  /* align-content: flex-end; */
+  /* flex-direction: row; */ 
+  /* margin-left: 200px; */
+  /* margin-right: 20px; */
 }
 
 /* TODO Question: How do I make these more consistently sized so I could convert to a button? */
 #nav-container a {
+  width: 100px;
   color: white;
-  flex: 1 0 80px;
-  padding: 14px 0px;
+  /* flex: 1 0 80px;
+  padding: 14px 0px; */
   text-align: center;
   text-decoration: none;
 }
@@ -114,14 +120,18 @@ section {
 
 /* Dynamic Viewport  */
 @media screen and (max-width: 768px) {
-  nav {
-    height: 290px;
+  nav { 
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   #person {
     width: 100%;
     text-align: center;
+  }
+
+  #hero {
+    margin-top: 75px;
   }
 
   /* TODO Question: Also, why do we still see the space for this? */
@@ -133,12 +143,17 @@ section {
   }
 
   #nav-container {
+    /* margin-left: auto; */
     flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    height: 200px;
+    background-color: gray;
   }
 
   #nav-container a {
     color: white;
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
   }
 
   /* TODO Question: Is there a better way to center? I thought I saw a one-line shortcut for this. */
