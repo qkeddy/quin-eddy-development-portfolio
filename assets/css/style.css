@@ -1,7 +1,6 @@
-/* TODO Question: What styling is here that I can eliminate? */
-/* TODO Question: Are these settings muscle memory or is there a tool that I can use to give a hint?
-
+/******************************************/
 /* Universal Selector */
+/******************************************/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +8,9 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/******************************************/
 /* Element Selectors */
+/******************************************/
 nav {
   display: flex;
   background-color: gray;
@@ -35,12 +36,15 @@ section {
   text-align: center;
 }
 
+/******************************************/
 /* Class Selectors */
+/******************************************/
 
 
 
-
+/******************************************/
 /* ID Selectors */
+/******************************************/
 #person {
   color: whitesmoke;
   /* flex: 1 0 auto; */
@@ -51,15 +55,10 @@ section {
   text-align: left;
 }
 
-#empty-space {
-  flex: 1 0 auto;
-  font-size: 0px;
-}
 
 #nav-container {
   /* flex: 1 0 auto; */
   display: flex;
- 
   align-items: center;
   /* align-content: flex-end; */
   /* flex-direction: row; */ 
@@ -99,7 +98,7 @@ section {
 }
 
 /* TODO Question: is this a good approach to design CSS? */
-#section-1 {
+main #section {
   display: flex;
 }
 
@@ -118,7 +117,11 @@ section {
   padding-left: 20px;
 }
 
-/* Dynamic Viewport  */
+/******************************************/
+/* Media queries */
+/******************************************/
+
+/* Dynamic viewport for mobile ready  */
 @media screen and (max-width: 768px) {
   nav { 
     flex-direction: column;
@@ -134,14 +137,6 @@ section {
     margin-top: 75px;
   }
 
-  /* TODO Question: Also, why do we still see the space for this? */
-  #empty-space {
-    font-size: 0px;
-    height: 0%;
-    flex-basis: 0%;
-    background-color: blueviolet;
-  }
-
   #nav-container {
     /* margin-left: auto; */
     flex-direction: column;
@@ -153,13 +148,10 @@ section {
 
   #nav-container a {
     color: white;
-    /* flex: 1 0 auto; */
   }
 
-  /* TODO Question: Is there a better way to center? I thought I saw a one-line shortcut for this. */
   #subtitle {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     right: auto;
   }
