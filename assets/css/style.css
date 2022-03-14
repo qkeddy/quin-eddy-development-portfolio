@@ -91,6 +91,7 @@ section {
   background-position: center;
 }
 
+/* TODO Question: is this a good approach to design CSS? */
 #section-1 {
   display: flex;
 }
