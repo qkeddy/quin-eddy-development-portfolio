@@ -1,3 +1,6 @@
+/* TODO Question: What styling is here that I can eliminate? */
+/* TODO Question: Are these settings muscle memory or is there a tool that I can use to give a hint?
+
 /* Universal Selector */
 * {
   box-sizing: border-box;
@@ -14,7 +17,31 @@ nav {
   align-items: center;
 }
 
-.person {
+main {
+  display: flex;
+  height: 75px;
+  align-items: center;
+}
+
+aside {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  flex: 3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Class Selectors */
+
+
+
+
+/* ID Selectors */
+#person {
   color: whitesmoke;
   flex: 1 0 auto;
   font-size: 45px;
@@ -23,13 +50,12 @@ nav {
   padding: 10px 20px;
 }
 
-/* TODO: Question: Is this the correct approach? */  
-.empty-space {
+#empty-space {
   flex: 1 0 auto;
   font-size: 0px;
 }
 
-.nav-container {
+#nav-container {
   flex: 1 0 auto;
   display: flex;
   align-items: center;
@@ -37,7 +63,7 @@ nav {
   flex-direction: row;
 }
 
-.nav-container a {
+#nav-container a {
   color: white;
   flex: 1 0 80px;
   padding: 14px 0px;
@@ -45,7 +71,19 @@ nav {
   text-decoration: none;
 }
 
-.hero {
+/* TODO Question: Is this the correct approach? */
+#subtitle {
+  position: relative;
+  text-align: end;
+  top: 175px;
+  right: 100px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 45px;
+  color: darkslategrey
+}
+
+#hero {
   height: 300px;
   width: 100%;
   margin-bottom: 0px;
@@ -54,69 +92,52 @@ nav {
   background-position: center;
 }
 
-#subtitle {
-  position: relative;
-  text-align: end;
-  top: 200px;
-  right: 100px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 45px;
-  color: darkslategrey
+#about-me {
+  color: gray;
+  height: 150px;
+  border-right: 3px solid gray
 }
 
+#about-me-detail {
+  color: gray;
+  height: 150px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Dynamic Viewport  */
 @media screen and (max-width: 768px) {
   nav {
     height: 290px;
     flex-direction: column;
   }
 
-  .person {
+  #person {
     width: 100%;
     text-align: center;
   }
 
-  /* TODO: Also, why do we still see the space for this in Chrome? */
-  .empty-space {
+  /* TODO Question: Also, why do we still see the space for this? */
+  #empty-space {
     font-size: 0px;
     height: 0%;
     flex-basis: 0%;
+    background-color: blueviolet;
   }
 
-  .nav-container {
+  #nav-container {
     flex-direction: column;
   }
 
-  .nav-container a {
+  #nav-container a {
     color: white;
     flex: 1 0 auto;
   }
 
-  /* TODO: Is there a better way to center? I thought I saw a shortcut for this. */
+  /* TODO Question: Is there a better way to center? I thought I saw a one-line shortcut for this. */
   #subtitle {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     right: auto;
   }
-
-
-
-
-  /* padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 0px;
-  text-decoration: none;
-  text-align: center; */
-
-  /* flex: 1 0 300px;
-  width: 400px;
-  flex-direction: row;
-  display: inline;
-  font-size: 24px;
-  list-style-type: none;
-  padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px; */
