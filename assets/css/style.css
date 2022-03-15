@@ -41,22 +41,70 @@ main section {
   display: flex;
   color: gray;
   background-color: whitesmoke;
+  width: 100%;
 }
 
 main section aside {
   flex: 1;
   border-right: 3px solid gray;
+  color: darkslategray;
   text-align: right;
   margin: 1em 0em;
   padding: 1em;
 }
-
 
 main section div {
   flex: 3;
   text-align: left;
   margin: 1em;
   padding: 1em;
+}
+
+/******************************************/
+/* Class Selectors */
+/******************************************/
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* TODO Question - why is it necessary to put the Display: Block  */
+.portfolio-spotlight {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 3px solid gray;
+  margin: .4em 0em;
+}
+
+.portfolio-spotlight div {
+  position: relative;
+  top: 11em;
+  width: 13em;
+  margin-left: 0em;
+  padding: .5em;
+  color: whitesmoke;
+  background-color: gray;
+}
+
+.portfolio-other {
+  display: block;
+  width: 49%;
+  text-align: center;
+  border: 3px solid gray;
+  margin: .4em 0em;
+}
+
+.portfolio-other div {
+  position: relative;
+  top: 2em;
+  width: 13em;
+  margin-left: 0em;
+  padding: .5em;
+  color: whitesmoke;
+  background-color: gray;
+
 }
 
 /******************************************/
@@ -102,6 +150,41 @@ main section div {
   color: darkslategrey
 }
 
+#box1-image {
+  height: 18em;
+  background-image: url("../images/organized-photos.png");
+  background-size: auto;
+  background-position: center;
+}
+
+#box2-image {
+  height: 9em;
+  background-image: url("../images/finance-integration.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#box3-image {
+  height: 9em;
+  background-image: url("../images/balanced-hierarchy.png");
+  background-size: auto;
+  background-position: center;
+}
+
+#box4-image {
+  height: 9em;
+  background-image: url("../images/anaplan-integration.png");
+  background-size: auto;
+  background-position: center;
+}
+
+#box5-image {
+  height: 9em;
+  background-image: url("../images/managed-integration-services.png");
+  background-size: auto;
+  background-position: center;
+}
+
 
 /******************************************/
 /* Media queries */
@@ -113,6 +196,24 @@ main section div {
     flex-direction: column;
     justify-content: flex-start;
     height: 16em;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-spotlight {
+    width: 100%;
+  }
+
+  section.portfolio-other {
+    width: 100%;
+  }
+
+  .portfolio-spotlight div {
+    top: 2em;
   }
 
   #person {
@@ -134,4 +235,8 @@ main section div {
     text-align: center;
     right: auto;
   }
-  
+
+  #box1-image {
+    height: 9em;
+  }
+}
