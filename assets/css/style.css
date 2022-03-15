@@ -6,8 +6,8 @@ example: basic styling versus flex styling */
 /******************************************/
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,20 +15,20 @@ example: basic styling versus flex styling */
 /* Element Selectors */
 /******************************************/
 nav {
+  height: 4.5em;
   background-color: gray;
-  height: 75px;
+  color: whitesmoke;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  color: whitesmoke;
+  align-items: center;
 }
 
 header {
-   height: 300px;
-   width: 100%;
-   background-image: url("../images/integrated-cloud-header.png");
-   background-size: cover;
-   background-position: center;
+  height: 18em;
+  width: 100%;
+  background-image: url("../images/integrated-cloud-header.png");
+  background-size: cover;
+  background-position: center;
 }
 
 main {
@@ -40,6 +40,7 @@ main {
 main section {
   display: flex;
   color: gray;
+  background-color: whitesmoke;
 }
 
 main section aside {
@@ -59,16 +60,10 @@ main section div {
 }
 
 /******************************************/
-/* Class Selectors */
-/******************************************/
-
-
-
-/******************************************/
 /* ID Selectors */
 /******************************************/
 #person {
-  font-size: 45px;
+  font-size: 2.8em;
   font-weight: bold;
   background-color: darkslategrey;
   padding: 10px 40px 10px 100px;
@@ -85,26 +80,25 @@ main section div {
 
 #nav-container a {
   width: 95px;
-  background-color: darkslategray;
-  border: 2px white solid;
   margin: 2px;
   padding: 2px;
+  border: 2px white solid;
+  border-radius: 30px;
+  background-color: darkslategray;
+  box-shadow: 3px 5px 5px darkslategray;
   color: white;
   text-decoration: none;
   text-align: center;
-  border-radius: 30px;
-  box-shadow: 3px 5px 5px darkslategray;
 }
 
-/* TODO Question: Is this the correct approach? */
 #subtitle {
   position: relative;
   text-align: end;
-  top: 175px;
-  right: 100px;
+  top: 4em;
+  right: 1em;
   font-style: italic;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 2.8em;
   color: darkslategrey
 }
 
@@ -115,10 +109,10 @@ main section div {
 
 /* Dynamic viewport for mobile ready  */
 @media screen and (max-width: 768px) {
-  nav { 
+  nav {
     flex-direction: column;
     justify-content: flex-start;
-    height: 250px;
+    height: 16em;
   }
 
   #person {
@@ -132,12 +126,7 @@ main section div {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: gray;
     height: 100%;
-  }
-
-  #nav-container a {
-    color: white;
   }
 
   #subtitle {
@@ -145,3 +134,4 @@ main section div {
     text-align: center;
     right: auto;
   }
+  
