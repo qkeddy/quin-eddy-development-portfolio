@@ -1,3 +1,6 @@
+/* TODO organize properties by their type
+example: basic styling versus flex styling */
+
 /******************************************/
 /* Universal Selector */
 /******************************************/
@@ -12,16 +15,23 @@
 /* Element Selectors */
 /******************************************/
 nav {
-  display: flex;
   background-color: gray;
   height: 75px;
+  display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center; 
+}
+
+header {
+   height: 300px;
+   width: 100%;
+   background-image: url("../images/integrated-cloud-header.png");
+   background-size: cover;
+   background-position: center;
 }
 
 main {
   display: flex;
-  /* height: 75px; */
   align-items: center;
   flex-direction: column;
 }
@@ -32,8 +42,8 @@ aside {
 }
 
 section {
-  padding: 10px;
-  text-align: center;
+  /* padding: 10px;
+  text-align: center; */
 }
 
 /******************************************/
@@ -47,33 +57,33 @@ section {
 /******************************************/
 #person {
   color: whitesmoke;
-  /* flex: 1 0 auto; */
   font-size: 45px;
   font-weight: bold;
   background-color: darkslategrey;
-  padding: 10px 20px;
+  padding: 10px 40px 10px 100px;
   text-align: left;
+  align-items: center;
+  white-space: nowrap;
 }
-
 
 #nav-container {
-  /* flex: 1 0 auto; */
   display: flex;
   align-items: center;
-  /* align-content: flex-end; */
-  /* flex-direction: row; */ 
-  /* margin-left: 200px; */
-  /* margin-right: 20px; */
+  margin-right: 10px;
 }
 
-/* TODO Question: How do I make these more consistently sized so I could convert to a button? */
+/* TODO Add rounded corners */
 #nav-container a {
   width: 100px;
+  background-color: darkslategray;
+  border: 2px white solid;
+  margin: 2px;
+  padding: 2px;
   color: white;
-  /* flex: 1 0 80px;
-  padding: 14px 0px; */
-  text-align: center;
   text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 3px 5px 5px darkslategray;
 }
 
 /* TODO Question: Is this the correct approach? */
@@ -88,14 +98,6 @@ section {
   color: darkslategrey
 }
 
-#hero {
-  height: 300px;
-  width: 100%;
-  margin-bottom: 0px;
-  background-image: url("../images/integrated-cloud-header.png");
-  background-size: cover;
-  background-position: center;
-}
 
 /* TODO Question: is this a good approach to design CSS? */
 main #section {
@@ -126,15 +128,18 @@ main #section {
   nav { 
     flex-direction: column;
     justify-content: flex-start;
+    height: 250px;
   }
 
   #person {
     width: 100%;
     text-align: center;
+    margin: 0px auto;
+    padding: 10px 0px 10px 0px;
   }
 
   #hero {
-    margin-top: 75px;
+    /* margin-top: 0px; */
   }
 
   #nav-container {
@@ -142,8 +147,9 @@ main #section {
     flex-direction: column;
     /* justify-content: space-evenly; */
     align-items: center;
-    height: 200px;
+    /* height: 200px; */
     background-color: gray;
+    width: 100%;
   }
 
   #nav-container a {
