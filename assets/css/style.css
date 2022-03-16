@@ -29,12 +29,13 @@ header {
   background-image: url("../images/integrated-cloud-header.png");
   background-size: cover;
   background-position: center;
+  filter: grayscale(60%)
 }
 
 main {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 main section {
@@ -144,7 +145,6 @@ main section div {
   text-align: end;
   top: 4em;
   right: 1em;
-  font-style: italic;
   font-weight: bold;
   font-size: 2.8em;
   color: darkslategrey
@@ -162,6 +162,7 @@ main section div {
   background-image: url("../images/finance-integration.png");
   background-size: cover;
   background-position: center;
+  filter: grayscale(1);
 }
 
 #box3-image {
@@ -176,6 +177,7 @@ main section div {
   background-image: url("../images/anaplan-integration.png");
   background-size: auto;
   background-position: center;
+  filter: grayscale(60%);
 }
 
 #box5-image {
@@ -185,6 +187,28 @@ main section div {
   background-position: center;
 }
 
+div #contact-container {
+  margin: 0em;
+
+}
+
+#contact-container {
+  justify-content: center;
+}
+
+#contact-container a {
+  width: 120px;
+  margin: 2px;
+  padding: 2px;
+  border: 2px white solid;
+  border-radius: 30px;
+  background-color: darkslategray;
+  box-shadow: 3px 5px 5px darkslategray;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 80%;
+}
 
 /******************************************/
 /* Media queries */
@@ -196,6 +220,16 @@ main section div {
     flex-direction: column;
     justify-content: flex-start;
     height: 16em;
+  }
+
+  main section {
+    flex-direction: column;
+  }
+
+  main section aside {
+    border-right: 0px;
+    border-bottom: 3px solid gray;
+    text-align: center;
   }
 
   .portfolio {
@@ -234,9 +268,24 @@ main section div {
     margin: 0 auto;
     text-align: center;
     right: auto;
+    top:3em;
   }
 
   #box1-image {
     height: 9em;
+  }
+
+  #outer-contact-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact-container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #contact-container a {
+    margin: .5em;
   }
 }
