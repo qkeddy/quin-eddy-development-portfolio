@@ -9,7 +9,7 @@ This is a pure HTML and CSS implementation of a standalone webpage. The purpose 
 
 ## Installation & Usage
 
-There are no installation requirements except to open the single `index.html` page
+There are no installation requirements except to open the single `index.html` page or visit the page: https://qkeddy.github.io/quin-eddy-development-portfolio/.
 
 ## Sample screenshots
 

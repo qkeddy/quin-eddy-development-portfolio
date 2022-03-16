@@ -112,12 +112,12 @@ main section div {
 /* TODO Question - I do not seem to be able to get rid of the underline text decoration */
 .format-works h1 {
   font-size: 16px;
-  text-decoration: none;
+  text-decoration: underline gray;
 }
 
 .format-works h2 {
   font-size: 14px;
-  text-decoration: none;
+  text-decoration: underline gray;
   font-weight: normal;
 }
 
