@@ -5,7 +5,7 @@ A portfolio of Quin Eddy's web development, functional programming, and integrat
 
 ## Description
 
-This is a pure HTML and CSS implementation of a standalone webpage. The purpose of the page is to showcase example work and capabilities to a prospective employer.
+This is a pure HTML and CSS implementation of a standalone webpage. The purpose of the page is to showcase work samples across various projects to a prospective employer.
 
 ## Installation & Usage
 
