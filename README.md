@@ -13,10 +13,12 @@ There are no installation requirements except to open the single `index.html` pa
 
 ## Sample screenshots
 
-**Web Page**
+**Desktop View**
+
 ![alt text](/assets/images/portfolio-page-desktop.png)
 
-**Web Page**
+**Mobile View**
+
 ![alt text](/assets/images/portfolio-page-mobile.png)
 
 ## Credits
