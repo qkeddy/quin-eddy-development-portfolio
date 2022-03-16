@@ -5,7 +5,7 @@ A portfolio of Quin Eddy's web development, functional programming, and integrat
 
 ## Description
 
-This is a pure HTML and CSS implementation of a standalone webpage. The purpose of the page is to showcase work samples across various projects to a prospective employer.
+This is a pure HTML and CSS implementation of a standalone webpage that supports both desktop and mobile viewports. The purpose of the page is to showcase work samples across various projects to a prospective employer.
 
 ## Installation & Usage
 
@@ -23,7 +23,7 @@ There are no installation requirements except to open the single `index.html` pa
 
 ## Credits
 
-🏆  Special thanks Leif Hetland and Laura Cole for such a great introduction to HTML and CSS and Joem Casusi for a terrific tutoring session. 
+🏆  Special thanks to Leif Hetland and Laura Cole for such a great introduction to HTML and CSS. Also a special shout out to Joem Casusi for a terrific tutoring session. 
 
 ## License
 
