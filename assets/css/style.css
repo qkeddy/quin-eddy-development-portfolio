@@ -70,7 +70,7 @@ main section div {
   justify-content: space-between;
 }
 
-/* TODO Question - why is it necessary to put the Display: Block  */
+/* TODO Question - I have fully qualified the class. As such, why is it necessary to put the Display: Block on? */
 .portfolio-spotlight {
   display: block;
   width: 100%;
@@ -89,6 +89,7 @@ main section div {
   background-color: gray;
 }
 
+/* TODO Question - I have fully qualified the class. As such, why is it necessary to put the Display: Block on? */
 .portfolio-other {
   display: block;
   width: 49%;
@@ -106,6 +107,18 @@ main section div {
   color: whitesmoke;
   background-color: gray;
 
+}
+
+/* TODO Question - I do not seem to be able to get rid of the underline text decoration */
+.format-works h1 {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.format-works h2 {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 /******************************************/
@@ -150,6 +163,7 @@ main section div {
   color: darkslategrey
 }
 
+/* Each tile gets an image */
 #box1-image {
   height: 18em;
   background-image: url("../images/organized-photos.png");
@@ -187,9 +201,9 @@ main section div {
   background-position: center;
 }
 
+
 div #contact-container {
   margin: 0em;
-
 }
 
 #contact-container {
