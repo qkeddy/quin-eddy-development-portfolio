@@ -287,5 +287,6 @@ div #contact-container {
 
   #contact-container a {
     margin: .5em;
+    width: 160px;
   }
 }
