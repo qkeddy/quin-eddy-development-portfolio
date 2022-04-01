@@ -76,7 +76,7 @@ a {
 
 /* TODO Question - I have fully qualified the class. As such, why is it necessary to put the Display: Block on? */
 .portfolio-spotlight {
-  display: block;
+  /* display: block; */
   width: 100%;
   text-align: center;
   border: 3px solid gray;
@@ -95,7 +95,7 @@ a {
 
 /* TODO Question - I have fully qualified the class. As such, why is it necessary to put the Display: Block on? */
 .portfolio-other {
-  display: block;
+  /* display: block; */
   width: 49%;
   text-align: center;
   border: 3px solid gray;
@@ -166,6 +166,7 @@ a {
 }
 
 /* Each tile gets an image */
+/* TODO - remove DRY tags in the following IDs */
 #box1-image {
   height: 18em;
   background-image: url("../images/organized-photos.png");
@@ -176,7 +177,7 @@ a {
 #box2-image {
   height: 9em;
   background-image: url("../images/finance-integration.png");
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   filter: grayscale(1);
 }
