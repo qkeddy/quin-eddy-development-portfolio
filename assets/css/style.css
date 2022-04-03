@@ -169,14 +169,14 @@ a {
 /* TODO - remove DRY tags in the following IDs */
 #box1-image {
   height: 18em;
-  background-image: url("../images/organized-photos.png");
+  background-image: url("../images/weather.jpeg");
   background-size: auto;
   background-position: center;
 }
 
 #box2-image {
   height: 9em;
-  background-image: url("../images/finance-integration.png");
+  background-image: url("../images/confident-travel.jpeg");
   background-size: auto;
   background-position: center;
   filter: grayscale(1);
