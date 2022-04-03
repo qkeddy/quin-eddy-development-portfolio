@@ -130,7 +130,7 @@ a {
   font-size: 2.8em;
   font-weight: bold;
   background-color: darkslategrey;
-  padding: 10px 40px 10px 100px;
+  padding: 10px 40px 10px 40px;
   text-align: left;
   align-items: center;
   white-space: nowrap;
@@ -227,6 +227,20 @@ div #contact-container {
   font-size: 80%;
 }
 
+#contact-container p {
+  width: 120px;
+  margin: 2px;
+  padding: 2px;
+  border: 2px white solid;
+  border-radius: 30px;
+  background-color: darkslategray;
+  box-shadow: 3px 5px 5px darkslategray;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 80%;
+}
+
 /******************************************/
 /* Media queries */
 /******************************************/
@@ -306,4 +320,9 @@ div #contact-container {
     margin: .5em;
     width: 160px;
   }
+
+    #contact-container p {
+      margin: .5em;
+      width: 160px;
+    }
 }
