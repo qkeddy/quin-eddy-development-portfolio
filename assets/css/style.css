@@ -1,6 +1,8 @@
 /* TODO organize properties by their type
 example: basic styling versus flex styling */
 
+/* TODO move the tiles so that on a small form factor they stack */
+
 /******************************************/
 /* Universal Selector */
 /******************************************/
@@ -105,7 +107,7 @@ a {
 .portfolio-other div {
   position: relative;
   top: 2em;
-  width: 13em;
+  width: 12em;
   margin-left: 0em;
   padding: .5em;
   color: whitesmoke;
@@ -113,7 +115,6 @@ a {
 
 }
 
-/* TODO Question - I do not seem to be able to get rid of the underline text decoration */
 .format-works h1 {
   font-size: 16px;
 }
@@ -170,14 +171,17 @@ a {
 #box1-image {
   height: 18em;
   background-image: url("../images/weather.jpeg");
-  background-size: auto;
+  background-size: cover;
   background-position: center;
+  width: 100%;
+  /* opacity: 0.5; */
 }
 
 #box2-image {
   height: 9em;
   background-image: url("../images/confident-travel.jpeg");
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   filter: grayscale(1);
 }
