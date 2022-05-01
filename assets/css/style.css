@@ -277,9 +277,41 @@ div #contact-container {
     width: 100%;
   }
 
-  section.portfolio-other {
+  /* With a space between selectors, indicates the selector "section" AND the class ".portfolio-other" is a descendant of the previous selector. Therefore and AND situation occurs. */
+  section .portfolio-other {
     width: 100%;
+    background-color: red;
+    border-color: red;
   }
+
+  /* If the space is removed between selectors then this indicates an element that is both a "section" and has the class of ".portfolio-other"  */
+  /* section.portfolio-other {
+    width: 100%;
+    background-color: red;
+    border-color: red;
+  } */
+
+  /* With a comma between selectors, this indicates an OR situation  */
+  /* section, .portfolio-other {
+    width: 100%;
+    background-color: red;
+    border-color: red;
+  } */
+
+  /* With a ">" indicates a direct child of the previous selector  */
+  /* div > .portfolio-other {
+      width: 100%;
+      background-color: red;
+      border-color: red;
+    } */
+
+  /* With a "+" indicates a direct sibling of the previous selector  */
+  /* a + .portfolio-other {
+      width: 100%;
+      background-color: red;
+      border-color: red;
+    } */
+
 
   .portfolio-spotlight div {
     top: 2em;
@@ -303,7 +335,7 @@ div #contact-container {
     margin: 0 auto;
     text-align: center;
     right: auto;
-    top:3em;
+    top: 3em;
   }
 
   #box1-image {
@@ -325,8 +357,13 @@ div #contact-container {
     width: 160px;
   }
 
-    #contact-container p {
-      margin: .5em;
-      width: 160px;
-    }
+  #contact-container p {
+    margin: .5em;
+    width: 160px;
+  }
+
+  section>div {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+  }
 }
