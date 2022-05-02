@@ -373,4 +373,8 @@ div #contact-container {
     margin-top: 0px;
   }
 
+  #nav-container a {
+    width: 120px;
+  }
+
 }
