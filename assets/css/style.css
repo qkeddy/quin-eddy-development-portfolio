@@ -1,8 +1,6 @@
 /* TODO organize properties by their type
 example: basic styling versus flex styling */
 
-/* TODO move the tiles so that on a small form factor they stack */
-
 /******************************************/
 /* Universal Selector */
 /******************************************/
@@ -28,9 +26,10 @@ nav {
 header {
   height: 18em;
   width: 100%;
-  background-image: url("../images/integrated-cloud-header.png");
+  background-image: url("../images/banner.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(60%)
 }
 
@@ -45,6 +44,10 @@ main section {
   color: gray;
   background-color: whitesmoke;
   width: 100%;
+}
+
+main>section>div>p {
+   line-height: 2;
 }
 
 main section aside {
@@ -81,14 +84,14 @@ a {
   /* display: block; */
   width: 100%;
   text-align: center;
-  border: 3px solid gray;
+  border: 1px solid gray;
   margin: .4em 0em;
 }
 
 .portfolio-spotlight div {
   position: relative;
   top: 11em;
-  width: 13em;
+  width: 14em;
   margin-left: 0em;
   padding: .5em;
   color: whitesmoke;
@@ -100,14 +103,14 @@ a {
   /* display: block; */
   width: 49%;
   text-align: center;
-  border: 3px solid gray;
+  border: 1px solid gray;
   margin: .4em 0em;
 }
 
 .portfolio-other div {
   position: relative;
   top: 2em;
-  width: 12em;
+  width: 14em;
   margin-left: 0em;
   padding: .5em;
   color: whitesmoke;
@@ -163,49 +166,55 @@ a {
   right: 1em;
   font-weight: bold;
   font-size: 2.8em;
-  color: darkslategrey
+  color: whitesmoke
 }
 
 /* Each tile gets an image */
 /* TODO - remove DRY tags in the following IDs */
 #box1-image {
   height: 18em;
-  background-image: url("../images/weather.jpeg");
+  background-image: url("../images/weather-umbrella.jpeg");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  /* opacity: 0.5; */
+  /* width: 100%; */
 }
 
 #box2-image {
   height: 9em;
-  background-image: url("../images/confident-travel.jpeg");
+  background-image: url("../images/team-profile-generator.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 #box3-image {
   height: 9em;
-  background-image: url("../images/balanced-hierarchy.png");
-  background-size: auto;
+  background-image: url("../images/hr-tracking.png");
+  background-size: cover;
   background-position: center;
 }
 
 #box4-image {
   height: 9em;
-  background-image: url("../images/anaplan-integration.png");
-  background-size: auto;
+  background-image: url("../images/simple-note-taker.jpeg");
+  background-size: cover;
   background-position: center;
-  filter: grayscale(60%);
 }
 
 #box5-image {
   height: 9em;
-  background-image: url("../images/managed-integration-services.png");
-  background-size: auto;
+  background-image: url("../images/ecommerce-credit-card.jpeg");
+  background-size: cover;
   background-position: center;
+}
+
+#box6-image {
+  height: 9em;
+  background-image: url("../images/balanced-hierarchies.jpeg");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -277,11 +286,9 @@ div #contact-container {
     width: 100%;
   }
 
-  /* With a space between selectors, indicates the selector "section" AND the class ".portfolio-other" is a descendant of the previous selector. Therefore and AND situation occurs. */
+  /* With a space between selectors, the style is applied when the selector is a descendant of the previous selector. */
   section .portfolio-other {
     width: 100%;
-    background-color: red;
-    border-color: red;
   }
 
   /* If the space is removed between selectors then this indicates an element that is both a "section" and has the class of ".portfolio-other"  */
@@ -291,21 +298,21 @@ div #contact-container {
     border-color: red;
   } */
 
-  /* With a comma between selectors, this indicates an OR situation  */
+  /* With a comma between selectors, this indicates an OR situation. In other words, style several elements with the same style, separate each element name with a comma.  */
   /* section, .portfolio-other {
     width: 100%;
     background-color: red;
     border-color: red;
   } */
 
-  /* With a ">" indicates a direct child of the previous selector  */
+  /* With a ">" indicates a direct child of the parent selector  */
   /* div > .portfolio-other {
       width: 100%;
       background-color: red;
       border-color: red;
     } */
 
-  /* With a "+" indicates a direct sibling of the previous selector  */
+  /* With a "+" indicates an adjacent sibling of the previous selector  */
   /* a + .portfolio-other {
       width: 100%;
       background-color: red;
@@ -342,11 +349,6 @@ div #contact-container {
     height: 9em;
   }
 
-  #outer-contact-container {
-    margin: 0;
-    padding: 0;
-  }
-
   #contact-container {
     align-items: center;
     justify-content: space-between;
@@ -362,8 +364,13 @@ div #contact-container {
     width: 160px;
   }
 
-  section>div {
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
+  main section aside,
+  main section div {
+    margin-bottom: 0px;
   }
+
+  #outer-contact-container {
+    margin-top: 0px;
+  }
+
 }
