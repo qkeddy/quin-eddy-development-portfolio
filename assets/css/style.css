@@ -175,8 +175,7 @@ a {
   height: 18em;
   background-image: url("../images/weather-umbrella.jpeg");
   background-size: cover;
-  background-position: center;
-  /* width: 100%; */
+  background-position-y: 60%;
 }
 
 #box2-image {
@@ -199,13 +198,15 @@ a {
   height: 9em;
   background-image: url("../images/simple-note-taker.jpeg");
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position-y: 30%;
 }
 
 #box5-image {
   height: 9em;
   background-image: url("../images/ecommerce-credit-card.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
